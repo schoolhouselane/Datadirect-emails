@@ -8,7 +8,7 @@ There are two build styles in this repo. Use the one that fits the goal:
 
 | Style | Folder | When to use |
 |---|---|---|
-| **Image-based (sliced)** ✅ default | `monthly-newsletter/image-version/` | When the design MUST match Figma pixel-for-pixel and behave like "zoom out to fit" on mobile (no columns stacking, no text reflow). This is what we shipped for the newsletter. |
+| **Image-based (sliced)** ✅ FINAL | `monthly-newsletter/FINAL/` | When the design MUST match Figma pixel-for-pixel and behave like "zoom out to fit" on mobile (no columns stacking, no text reflow). This is what we shipped for the newsletter. |
 | **Coded (HTML/CSS)** | `monthly-newsletter/`, `product-of-the-week/` | Simpler layouts where selectable text / accessibility matter more than pixel-exactness, and stacking on mobile is acceptable. |
 
 ---
