@@ -1,24 +1,21 @@
-# ✅ FINAL — DataDirect Monthly Newsletter (image-based, tested & approved)
+# ✅ FINAL — DataDirect Monthly Newsletter (August design, image-based)
 
-This is the shipped version. The whole Figma design is exported and sliced into
-5 responsive images (`slices/nl-1…5.png`). Each image is `width:100%` so on any
-screen the entire design **scales down proportionally (zoom-out)** — identical
-to Figma, no reflow, no column stacking, no text drop — and it renders the same
-in every client (Gmail incl. iOS, Outlook, Apple Mail).
+The Figma design (node 83:20) exported and sliced into 8 responsive images
+(`slices/nl2-1…8.png`). Each is `width:100%` → the whole design scales down
+proportionally on mobile (zoom-out), identical to Figma, no reflow, on every
+client. Every slice has explicit `height` so mobile mail can't clip it.
 
 ## Files
-- **`index-FINAL.html`** — the tested file. Slice URLs point at an external
-  image host (catbox.moe) so it renders anywhere immediately (preview / send).
-- `index-hubspot.html` — same HTML, slice URLs point at the HubSpot CDN
-  (`hubfs/146425634/nl-1…5.png`). Use this for the real HubSpot send after
-  uploading the 5 slices to HubSpot Files.
-- `index-relative.html` — slice URLs are local `slices/nl-X.png` (local preview).
-- `slices/` — the 5 image slices to host.
-- `preview-desktop.png` / `preview-mobile.png`.
+- **`index-FINAL.html`** — tested; slice URLs on an external host (catbox) so it
+  renders anywhere immediately (preview / quick send).
+- `index-hubspot.html` — same, slice URLs on the HubSpot CDN
+  (`hubfs/146425634/nl2-1…8.png`). Use for the real HubSpot send after uploading
+  the 8 slices to HubSpot Files.
+- `index-relative.html` — local `slices/nl2-X.png` (local preview).
+- `slices/nl2-1…8.png` — the 8 slices to host.
 
-## To send from HubSpot
-1. Upload `slices/nl-1.png … nl-5.png` to HubSpot → Marketing → Files.
-2. Paste `index-hubspot.html` into a HubSpot Custom/Coded email.
-3. Send test → check on phone (it zooms out to fit).
+## Linked CTAs
+Explore the Store / Products → datadirect.ie · See examples → /it-solutions ·
+LinkedIn slice → LinkedIn · Tell us what you think → mailto:sales@datadirect.ie
 
-Build method for the whole repo: see `../../METHOD.md`.
+Method: see `../../METHOD.md`.
