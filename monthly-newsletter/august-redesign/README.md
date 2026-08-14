@@ -1,21 +1,23 @@
-# ✅ FINAL — DataDirect Monthly Newsletter (August design, image-based)
+# ✅ DataDirect Monthly Newsletter — August redesign (image-based)
 
-The Figma design (node 83:20) exported and sliced into 8 responsive images
-(`slices/nl2-1…8.png`). Each is `width:100%` → the whole design scales down
-proportionally on mobile (zoom-out), identical to Figma, no reflow, on every
-client. Every slice has explicit `height` so mobile mail can't clip it.
+Figma node 83:20 exported at 2x and sliced into responsive images (width:100%),
+so the whole design scales down proportionally on mobile (zoom-out), identical
+to Figma on every client. Explicit heights prevent mobile clipping.
+
+The **Products of the Week** row is split into a heading + 3 clickable product
+columns, each linking to its product-details page:
+- Apple iPhone Air  -> productId=CQ00075
+- HP EliteBook 6 G1ah -> productId=CQ60626
+- Samsung Galaxy Tab -> productId=CQ00952
 
 ## Files
-- **`index-FINAL.html`** — tested; slice URLs on an external host (catbox) so it
-  renders anywhere immediately (preview / quick send).
-- `index-hubspot.html` — same, slice URLs on the HubSpot CDN
-  (`hubfs/146425634/nl2-1…8.png`). Use for the real HubSpot send after uploading
-  the 8 slices to HubSpot Files.
-- `index-relative.html` — local `slices/nl2-X.png` (local preview).
-- `slices/nl2-1…8.png` — the 8 slices to host.
+- `index-FINAL.html`   — slice URLs on catbox (renders anywhere; quick preview/send).
+- `index-hubspot.html` — slice URLs on the HubSpot CDN (hubfs/146425634/nl2-*.png).
+- `index-relative.html`— local slices/nl2-*.png.
+- `slices/` — nl2-1, nl2-2, nl2-3a (heading), nl2-3b/3c/3d (products), nl2-4…nl2-8.
 
-## Linked CTAs
-Explore the Store / Products → datadirect.ie · See examples → /it-solutions ·
-LinkedIn slice → LinkedIn · Tell us what you think → mailto:sales@datadirect.ie
+## Other linked CTAs
+Explore the Store -> datadirect.ie · See examples -> /it-solutions ·
+LinkedIn -> LinkedIn · Tell us what you think -> mailto:sales@datadirect.ie
 
-Method: see `../../METHOD.md`.
+Method: see ../../METHOD.md
