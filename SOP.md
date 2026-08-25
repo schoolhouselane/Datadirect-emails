@@ -2,14 +2,24 @@
 
 Use this process to turn a Figma newsletter into a slice-based HTML email with HubSpot-hosted images.
 
-## 1. Prepare the design
+## Why the email is built from image slices
+
+Coded HTML reflows on small screens. Gmail iOS can compress multi-column layouts until text appears one word per line, causing the mobile email to stop matching the design.
+
+Image slices avoid this problem. Each slice scales to `width:100%`, so mobile displays a true zoomed-out version of the desktop design. Nothing reflows or stacks, and the email remains consistent across Outlook, Gmail, Gmail iOS, and Apple Mail.
+
+The trade-off is that text inside an image is not selectable. Add accurate `alt` text to every slice for accessibility and email clients that block images.
+
+## Phase 1 — Designer (in Figma)
 
 - Create the newsletter in one `600 px` wide Figma frame.
 - Provide the final Figma frame URL.
 - Provide a link map for every clickable area.
 - Confirm product names, prices, URLs, and image alt text.
 
-## 2. Create and export slices in Figma
+## Phase 2 — Developer
+
+### Create and export slices in Figma
 
 1. The developer creates the required slice frames or export areas directly in Figma.
 2. Use as many slices as the layout and links require.
@@ -19,7 +29,7 @@ Use this process to turn a Figma newsletter into a slice-based HTML email with H
 
 The newsletter remains `600 px` wide in HTML, so a full-width slice exports at `1200 px`. The HTML display size is half the exported pixel size. For example, a `424 × 444 px` slice displays at `212 × 222 px`.
 
-## 3. Name each campaign
+### Name the campaign
 
 Give every email a unique campaign ID:
 
@@ -46,7 +56,7 @@ Use the campaign ID in every slice filename:
 
 Unique names prevent new HubSpot uploads from overwriting earlier campaigns.
 
-## 4. Build the HTML
+### Build the HTML
 
 Builder template:
 
@@ -70,7 +80,7 @@ monthly-newsletter/2026-09-monthly/
 
 `index-relative.html` uses local files for preview. `index-hubspot.html` uses public HubSpot image URLs.
 
-## 5. Host images in HubSpot
+## Phase 3 — Host images in HubSpot
 
 1. Upload every slice to HubSpot Files in portal `146425634`, region `EU1`.
 2. Keep the campaign filenames unchanged.
