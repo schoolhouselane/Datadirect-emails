@@ -9,14 +9,15 @@ Use this process to turn a Figma newsletter into a slice-based HTML email with H
 - Provide a link map for every clickable area.
 - Confirm product names, prices, URLs, and image alt text.
 
-## 2. Export and slice
+## 2. Create and export slices in Figma
 
-1. Export the full Figma frame as a PNG at `2x`. The exported image must be `1200 px` wide.
-2. Cut the image into as many slices as the layout and links require.
+1. The developer creates the required slice frames or export areas directly in Figma.
+2. Use as many slices as the layout and links require.
 3. Keep areas with different links in separate slices.
-4. Make sure all slices join without gaps and recreate the full design.
+4. Export every slice from Figma as a PNG at `2x`.
+5. Make sure the exported slices join without gaps and recreate the full design.
 
-The HTML display size is half the exported pixel size. For example, a `424 × 444 px` slice displays at `212 × 222 px`.
+The newsletter remains `600 px` wide in HTML, so a full-width slice exports at `1200 px`. The HTML display size is half the exported pixel size. For example, a `424 × 444 px` slice displays at `212 × 222 px`.
 
 ## 3. Name each campaign
 
