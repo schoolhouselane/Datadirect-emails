@@ -68,8 +68,9 @@ For each campaign:
 
 1. Update the slice order, links, and alt text in the builder.
 2. Match the builder's image names to the campaign's slice filenames.
-3. Generate the HTML.
-4. Save the campaign in its own folder:
+3. Add the final HubSpot CDN URL for every slice to `index-hubspot.html`.
+4. Generate and test both HTML versions.
+5. Save the campaign in its own folder:
 
 ```text
 monthly-newsletter/2026-09-monthly/
@@ -78,16 +79,16 @@ monthly-newsletter/2026-09-monthly/
 └── slices/
 ```
 
-`index-relative.html` uses local files for preview. `index-hubspot.html` uses public HubSpot image URLs.
+`index-relative.html` uses local files for preview. `index-hubspot.html` contains the final production URLs and is completed by the developer.
 
 ## Phase 3 — Host images in HubSpot
 
 1. Upload every slice to HubSpot Files in portal `146425634`, region `EU1`.
-2. Keep the campaign filenames unchanged.
-3. Set every image to public.
-4. Use **Copy URL** in HubSpot for each uploaded image.
-5. Confirm each URL opens in an incognito window without a HubSpot login.
-6. Add the copied URLs to the matching `src` attributes in `index-hubspot.html`.
+2. Upload the files to the root of the file manager.
+3. Keep every campaign filename exactly as provided by the developer.
+4. Set every image to public.
+5. Confirm the URLs used in `index-hubspot.html` open in an incognito window without a HubSpot login.
+6. If a URL does not work, report it to the developer. The HubSpot manager does not edit the HTML.
 
 A typical public URL looks like this:
 
@@ -95,4 +96,4 @@ A typical public URL looks like this:
 https://146425634.fs1.hubspotusercontent-eu1.net/hubfs/146425634/2026-09-monthly-1.png
 ```
 
-Always use the URL returned by HubSpot. Do not guess the path.
+The developer prepares these URLs before handoff. The HubSpot manager's responsibility is to upload the matching public files to the required location.
